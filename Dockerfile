@@ -1,5 +1,5 @@
 # Use the official Ubuntu base image
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 # Install g++, the GNU C++ compiler
 RUN apt-get update && apt-get install -y g++
@@ -11,4 +11,4 @@ WORKDIR /app
 COPY . /app
 
 # Compile the program
-RUN g++ -o hello helloo.cpp
+RUN g++ -o hello hello.cpp
